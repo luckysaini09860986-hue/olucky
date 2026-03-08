@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUCKY | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:20px 0;
+}
+
+header{
+background:#111;
+color:white;
+padding:20px 0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+nav h1{
+font-size:24px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+nav ul li a:hover{
+color:#00bcd4;
+}
+
+.hero{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:40px;
+padding:60px 0;
+}
+
+.photo{
+width:180px;
+height:180px;
+background:#ddd;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:14px;
+color:#666;
+}
+
+.hero-text h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+color:#666;
+}
+
+section{
+padding:60px 0;
+}
+
+.section-title{
+font-size:26px;
+margin-bottom:25px;
+border-bottom:3px solid #00bcd4;
+display:inline-block;
+padding-bottom:5px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+}
+
+.skill{
+background:white;
+padding:12px;
+border-radius:6px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+margin-bottom:20px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-links a{
+text-decoration:none;
+color:#00bcd4;
+margin-right:10px;
+}
+
+.contact-links a{
+display:inline-block;
+margin-right:15px;
+color:#00bcd4;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+margin-top:40px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+nav ul{
+margin-top:10px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<h1>Your Name</h1>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+
+
+<div class="container">
+
+<div class="hero">
+
+<div class="photo">
+photo
+</div>
+
+<div class="hero-text">
+<h2>Hello, I'm LUCKY</h2>
+<p>Short professional summary from your resume goes here.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<section id="about">
+<div class="container">
+
+<h2 class="section-title">About</h2>
+
+<p>
+Write a short introduction about yourself here. Include your background,
+career focus, and interests. Replace this text with content from your resume.
+</p>
+
+</div>
+</section>
+
+
+<section id="skills">
+<div class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+<div class="skill">Python</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="experience">
+<div class="container">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="card">
+<h3>Job Title</h3>
+<p><strong>Company Name</strong> | 2022 - Present</p>
+<p>
+Describe your responsibilities and achievements here. Replace with
+experience from your resume.
+</p>
+</div>
+
+<div class="card">
+<h3>Previous Role</h3>
+<p><strong>Company Name</strong> | 2020 - 2022</p>
+<p>
+Add another work experience description here.
+</p>
+</div>
+
+</div>
+</section>
+
+
+<section id="projects">
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="card">
+<h3>Project Name</h3>
+<p>Short description of the project and technologies used.</p>
+
+<div class="project-links">
+<a href="#">Live Demo</a>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+<div class="card">
+<h3>Another Project</h3>
+<p>Project description and your role in building it.</p>
+
+<div class="project-links">
+<a href="#">Live Demo</a>
+<a href="#">GitHub</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="contact">
+<div class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Email: your@email.com</p>
+<p>Phone: +91 XXXXX XXXXX</p>
+
+<div class="contact-links">
+<a href="#">LinkedIn</a>
+<a href="#">GitHub</a>
+<a href="#">Twitter</a>
+</div>
+
+</div>
+</section>
+
+
+<footer>
+<p>© 2026 LUCKY| Portfolio</p>
+</footer>
+
+</body>
+</html>
